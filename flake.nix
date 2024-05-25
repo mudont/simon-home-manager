@@ -13,7 +13,7 @@
   outputs = { self, nixpkgs, home-manager, nur }:
     let
       # Values you should modify
-      username = "kronicmage"; # $USER
+      username = "murali"; # $USER
       system = "x86_64-linux";  # x86_64-linux, aarch64-multiplatform, etc.
       stateVersion = "23.11";     # See https://nixos.org/manual/nixpkgs/stable for most recent
 

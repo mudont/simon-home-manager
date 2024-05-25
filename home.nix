@@ -41,7 +41,7 @@ in
     ++ (if graphical then [
       slack
       # webex
-      citrix_workspace
+      # citrix_workspace
       openconnect
       xmlstarlet
       discord
