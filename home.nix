@@ -35,6 +35,7 @@ in
       killall
       lxappearance
       usbutils
+      warp-terminal
       (python3.withPackages (ps: with ps; [
         requests
         pynvim
