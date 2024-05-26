@@ -24,11 +24,18 @@
         haskell.haskell
 
         # Copilot
-        github.copilot
+        # github.copilot not free. use codeium.codeium
 
         # Misc
         mkhl.direnv
         ms-vscode.live-server
+      ]  ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+        {
+            name = "codeium";
+            publisher = "Codeium";
+            version = "1.18.40"; # "1.5.9";
+            sha256 = "sha256-6PLn7g/znfc2uruYTqxQ96IwXxfz6Sbguua3YqZd64U=";
+        }
       ];
     };
   };
