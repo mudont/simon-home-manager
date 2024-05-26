@@ -9,6 +9,8 @@ let
 in
 {
   nixpkgs.config.allowUnfree = allowUnfree;
+  imports = [./vscode.nix];
+
   home = {
     stateVersion = stateVersion;
     username = username;
@@ -36,6 +38,8 @@ in
       (python3.withPackages (ps: with ps; [
         requests
         pynvim
+        plotly
+        seaborn
       ]))
     ]
     ++ (if graphical then [
